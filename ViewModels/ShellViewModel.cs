@@ -92,7 +92,7 @@ namespace WpfAppTutorial.ViewModels
 
 		public async void LoadPageTwo()
 		{
-			await ActivateItemAsync(new SecondChildViewModel(), new CancellationToken());
+			await ActivateItemAsync(new SecondChildViewModel(FileSelected), new CancellationToken());
 		}
 	}
 }
